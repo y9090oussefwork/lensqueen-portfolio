@@ -1,0 +1,28 @@
+# Ignore compressed archives and backups
+project.zip
+*.zip
+*.tar.gz
+*.rar
+
+# Ignore vendor directory (contains library files with test keys)
+project/vendor/
+
+# Ignore bundled payment gateway SDK test files (contain test API keys)
+project/app/Services/Gateway/stripe/stripe-php/tests/
+project/app/Services/Gateway/stripe/stripe-php/README.md
+project/app/Services/Gateway/razorpay/razorpay-php/tests/
+
+# Ignore Laravel caches and logs
+project/storage/logs/*.log
+project/storage/framework/cache/data/*
+project/storage/framework/views/*.php
+project/storage/framework/sessions/*
+project/bootstrap/cache/packages.php
+project/bootstrap/cache/services.php
+
+# Ignore node_modules
+project/node_modules/
+
+# Ignore OS files
+.DS_Store
+Thumbs.db

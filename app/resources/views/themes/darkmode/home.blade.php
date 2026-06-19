@@ -1,0 +1,16 @@
+@extends($theme.'layouts.app')
+@section('title',trans('Home'))
+
+@section('content')
+    @include($theme.'partials.heroBanner')
+    @include($theme.'sections.about-us')
+    @include($theme.'sections.gallery')
+    @include($theme.'sections.services')
+    @include($theme.'sections.behind-the-scene')
+    @include($theme.'sections.team')
+    @include($theme.'sections.statistics')
+    @include($theme.'sections.plan')
+    @include($theme.'sections.testimonial')
+    @include($theme.'sections.blog')
+    @include($theme.'sections.instagram')
+@endsection
